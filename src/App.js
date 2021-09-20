@@ -29,7 +29,7 @@ function GetAndDisplayCountries(props) {
   }, [])
   return (
     <div className="countryContainer py-5 animate__animated animate__zoomIn">
-     {countries.map(country => <div className="card"><img class="card-img-top" src={country.flag} alt="country" style={{height: '100px', objectFit: 'cover'}}></img><div className="card-body"><div className="card-title">country : <span className="text-success fw-bolder">{country.name}</span></div><div className="card-text"><p>capital : <span className="fw-bold text-success">{country.capital}</span></p><p>population : <span className="fw-bold text-success">{country.population}</span></p><p>region : <span className="fw-bold text-success">{country.region}</span></p></div></div></div>)}
+     {countries.map(country => <div className="card border border-success border-1"><img class="card-img-top" src={country.flag} alt="country" style={{height: '100px', objectFit: 'cover'}}></img><div className="card-body"><div className="card-title">country : <span className="text-success fw-bolder">{country.name}</span></div><div className="card-text"><p>capital : <span className="fw-bold text-success">{country.capital}</span></p><p>population : <span className="fw-bold text-success">{country.population}</span></p><p>region : <span className="fw-bold text-success">{country.region}</span></p></div></div></div>)}
     </div>
   )
 }

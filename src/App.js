@@ -23,7 +23,9 @@ function App() {
 function GetCountryData(props) {
   const [countries, setCountries] = useState([]);
   useEffect(() => {
-    fetch('https://restcountries.eu/rest/v2/all')
+    fetch('https://api.countrylayer.com/v2/all
+    ?access_key= 2de5a63546f56133d5c98488c0f5bfc9
+')
      .then(response => response.json())
       .then(data => setCountries(data.slice(0,20)))
   }, [])
